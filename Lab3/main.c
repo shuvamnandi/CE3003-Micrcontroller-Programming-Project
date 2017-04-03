@@ -144,7 +144,7 @@ static  void  AppTaskStart (void  *p_arg)
     // Right wheel is faster
     // 1st Stretch
     RoboMove(23u, 23u, 70u, 70u);
-    // turn left
+    // Turn left
     RoboMove(0u, 14u, 0u, 60u);
     // Long stretch
     RoboMove(90u,90u, 74u, 75u);
@@ -155,11 +155,11 @@ static  void  AppTaskStart (void  *p_arg)
     // Turn left
     RoboMove(0u, 14u, 0u, 59u);
     // last stretch
-    RoboMove(67u, 67u, 74u, 75u);
+    RoboMove(69u, 69u, 74u, 75u);
     // Turn right
     RoboMove(13u, 0u, 80u, 0u);
-    // move to circle
-    RoboMove(1u, 1u, 60u, 60u);
+    // Move into circle
+    RoboMove(2u, 2u, 59u, 60u);
     
     BSP_DisplayClear();
     BSP_DisplayStringDraw("DONE !!!", 30u, 0u);
