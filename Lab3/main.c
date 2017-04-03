@@ -63,8 +63,8 @@ static  void  AppTaskLed (void  *p_arg)
 {
   OS_ERR      err;
   (void)&p_arg;
-  //CPU_INT08U counter = 8; //for Maze 1
-  CPU_INT08U counter = 15; //for Maze 2
+  CPU_INT08U counter = 8; //for Maze 1
+  //CPU_INT08U counter = 15; //for Maze 2
   LEDsInit();
   
   while(counter > 0)
@@ -128,16 +128,17 @@ static  void  AppTaskStart (void  *p_arg)
     // Maze 1
     // Curve way
     // RoboMove(116u,84u,60u,48u);
+    // Start a bit behind
     
     //Straight way
     RoboMove(5u, 0u, 50u, 0u);
-    RoboMove(29u, 29u, 70u, 70u);
+    RoboMove(29u, 29u, 75u, 75u);
     RoboMove(9u, 0u, 50u, 0u);
-    RoboMove(34u, 34u, 70u, 70u);
-    RoboMove(12u, 0u, 50u, 0u);
-    RoboMove(24u, 24u, 70u, 70u);
-    //RoboMove(5u, 0u, 50u, 0u);
-    //RoboMove(10u, 10u, 65u, 66u);
+    RoboMove(33u, 33u, 75u, 75u);
+    RoboMove(11u, 0u, 50u, 0u);
+    RoboMove(22u, 22u, 75u, 75u);
+    RoboMove(3u, 0u, 50u, 0u);
+    RoboMove(2u, 3u, 50u, 50u);
     
     /*
     // Maze 2
