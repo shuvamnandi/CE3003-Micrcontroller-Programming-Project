@@ -124,22 +124,23 @@ static  void  AppTaskStart (void  *p_arg)
 
     //Go forward for 15sec
     //segL,segR,speedL,speedR
-    //Maze 1
-    //Curve way
-    //RoboMove(116u,84u,60u,48u);
-    /*
-    //Straight way
-    RoboMove(3u,0u,60u,0u);
-    RoboMove(26u,26u,70u,70u);
-    RoboMove(10u,0u,60u,0u);
-    RoboMove(36u,36u,68u,68u);
-    RoboMove(10u,0u,60u,0u);
-    RoboMove(20u,20u,70u,70u);
-    RoboMove(5u,0u,38u,0u);
-    RoboMove(3u,3u,29u,29u);
-    */
     
-    //Maze 2
+    // Maze 1
+    // Curve way
+    // RoboMove(116u,84u,60u,48u);
+    
+    //Straight way
+    RoboMove(5u, 0u, 50u, 0u);
+    RoboMove(29u, 29u, 70u, 70u);
+    RoboMove(9u, 0u, 50u, 0u);
+    RoboMove(34u, 34u, 70u, 70u);
+    RoboMove(12u, 0u, 50u, 0u);
+    RoboMove(24u, 24u, 70u, 70u);
+    //RoboMove(5u, 0u, 50u, 0u);
+    //RoboMove(10u, 10u, 65u, 66u);
+    
+    /*
+    // Maze 2
     
     // Right wheel is faster
     // 1st Stretch
@@ -160,6 +161,7 @@ static  void  AppTaskStart (void  *p_arg)
     RoboMove(14u, 0u, 75u, 0u);
     // Move into circle
     RoboMove(2u, 2u, 63u, 64u);
+    */
     
     BSP_DisplayClear();
     BSP_DisplayStringDraw("DONE !!!", 30u, 0u);
